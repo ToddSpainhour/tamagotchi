@@ -1,5 +1,6 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
+// import tamagotchi from '../helpers/data/tamagotchi';
 
 
 const printEatSection = () => {
@@ -12,8 +13,17 @@ const printEatSection = () => {
 
   printToDom('eat', domString);
 
-  const eatHealthyFoodButtonEvent = () => console.error('this is inside your eatHealthyFoodButtonEvent');
-  const eatUnhealthyFoodButtonEvent = () => console.error('this is inside your eatUnhealthyFoodButtonEvent');
+
+  const eatHealthyFoodButtonEvent = () => {
+    if (getTamagotchiStats.full <= 90) { getTamagotchiStats.full += 10; } else { getTamagotchiStats.full = 100; }
+    printEatSection();
+  };
+
+
+  const eatUnhealthyFoodButtonEvent = () => {
+    if (getTamagotchiStats.full >= 3) { getTamagotchiStats.full -= 3; } else { getTamagotchiStats.full = 0; }
+    printEatSection();
+  };
 
   $('#healthy-food-button').click(eatHealthyFoodButtonEvent);
   $('#unhealthy-food-button').click(eatUnhealthyFoodButtonEvent);
