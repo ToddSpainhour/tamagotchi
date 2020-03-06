@@ -30,4 +30,4 @@ const printEatSection = () => {
 };
 
 
-export default printEatSection();
+export default printEatSection;
