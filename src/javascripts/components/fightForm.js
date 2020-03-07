@@ -1,14 +1,15 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
 
+
 const printFightSection = () => {
   let domString = '';
 
   domString += `<h2>Health Score: ${getTamagotchiStats.strength} </h2>`;
   domString += '<button id="fight-button">Fight</button>';
   domString += '<button id="run-away-button">Run Away</button>';
-  printToDom('fight', domString);
 
+  printToDom('fight', domString);
 
   const fightButtonEvent = () => {
     if (getTamagotchiStats.strength >= 10) { getTamagotchiStats.strength -= 10; } else { getTamagotchiStats.strength = 0; }
@@ -19,7 +20,6 @@ const printFightSection = () => {
 
   const runAwayButtonEvent = () => {
     if (getTamagotchiStats.strength >= 0 && getTamagotchiStats.strength < 100) { getTamagotchiStats.strength += 1; }
-    console.error('this is inside your runAwayButtonEvent');
     printFightSection();
   };
 
