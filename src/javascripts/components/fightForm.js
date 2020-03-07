@@ -13,7 +13,6 @@ const printFightSection = () => {
 
   const fightButtonEvent = () => {
     if (getTamagotchiStats.strength >= 10) { getTamagotchiStats.strength -= 10; } else { getTamagotchiStats.strength = 0; }
-    console.error('this is inside your fightButtonEvent');
     printFightSection();
   };
 
