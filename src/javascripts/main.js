@@ -1,16 +1,12 @@
 import '../styles/main.scss';
 import printEatSection from './components/foodForm';
 import printFightSection from './components/fightForm';
+import printPlaySection from './components/playForm';
 
 // console.error('hi');
 
-// const events = () => { printFightSection printEatSection
-// };
-// // const init = () => printEatSection;
-
-// const init = () => events();
-
 const init = () => {
+  printPlaySection();
   printFightSection();
   printEatSection();
 };
