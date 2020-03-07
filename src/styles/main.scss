@@ -1,3 +1,55 @@
 body {
   background-color: cornflowerblue;
+  margin: 0%;
+  // width: 100%;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+button {
+  display: inline-flex;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.quad {
+  height: 48%;
+}
+
+
+#eat {
+width: 48%;
+height: 250px;
+background-color: lightgreen;
+filter: grayscale(50%);
+}
+
+#play {
+  width: 48%;
+  height: 250px;
+  background-color: yellow;
+  filter: grayscale(75%);
+}
+
+#fight {
+  width: 48%;
+  height: 250px;
+  background-color: rgb(151, 32, 32);
+  // filter: grayscale(25%);
+}
+
+#sleep {
+  width: 48%;
+  height: 250px;
+  background-color: darkorchid;
+  filter: grayscale(50%);
 }
