@@ -1,6 +1,5 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
-// import tamagotchi from '../helpers/data/tamagotchi';
 
 
 const printEatSection = () => {
