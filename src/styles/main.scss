@@ -1,12 +1,17 @@
 $accent-color: #ef8354;
 $secondary-color: #4f5d75;
+$color-one: #2D3142;
+$color-two: #757474;
+$color-three: #dddddd;
+$color-four: #4f5d75;
 $main-font-stack: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
 $opacity-filter: grayscale(10%);
+$div-width: 50%;
+$div-height: 50vh;
 
 
 html body {
   background-color: cornflowerblue;
-  // filter: $opacity-filter;
   height: 100%;
   padding: 0%;
   margin: 0%;
@@ -17,15 +22,26 @@ h2 {
   font-family: $main-font-stack; 
   font-size: 4rem;
   text-align: center;
-  color: $accent-color
+  color: $accent-color;
+  padding-top: 10%;
 }
 
 
 button {
-  display: inlineblock;
   font-family: $main-font-stack;
-  color: $secondary-color;
-  // background-color: black;
+  color: $color-two;
+  width: 150px;
+  padding: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  color: $accent-color;
+}
+
+.button-block {
+  margin-left: 28%;
 }
 
 
@@ -36,33 +52,33 @@ button {
 
 
 #eat {
-width: 50%;
-min-height: 50vh;
-background-color: #2D3142;
-filter: $opacity-filter
+width: $div-width;
+min-height: $div-height;
+background-color: $color-one;
+filter: $opacity-filter;
 }
 
 
 #play {
-  width: 50%;
-  min-height: 50vh;
+  width: $div-width;
+  min-height: $div-height;
   // background-color: #4f5d75;
-  background-color:#757474;
+  background-color: $color-two;
   filter: $opacity-filter
 }
 
 
 #fight {
-  width: 50%;
-  min-height: 50vh;
-  background-color: #dddddd;
+  width: $div-width;
+  min-height: $div-height;
+  background-color: $color-three;
   filter: $opacity-filter
 }
 
 
 #sleep {
-  width: 50%;
-  min-height: 50vh;
-  background-color: #4f5d75;
+  width: $div-width;
+  min-height: $div-height;
+  background-color: $color-four;
   filter: $opacity-filter
 }
