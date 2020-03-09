@@ -6,8 +6,11 @@ const printEatSection = () => {
   let domString = '';
 
   domString += `<h2>Fullness Score: ${getTamagotchiStats.full} </h2>`;
+  domString += '<div class="button-block">';
   domString += '<button id="healthy-food-button">Eat Healthy Food</button>';
   domString += '<button id="unhealthy-food-button">Eat Unhealthy Food</button>';
+  domString += '</div>';
+
   // use single quotes unless it contains a templete literal. Then use the usual ` before and after.
 
   printToDom('eat', domString);
