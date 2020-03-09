@@ -1,66 +1,68 @@
+$accent-color: #ef8354;
+$secondary-color: #4f5d75;
+$main-font-stack: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+$opacity-filter: grayscale(10%);
+
+
 html body {
   background-color: cornflowerblue;
+  // filter: $opacity-filter;
   height: 100%;
   padding: 0%;
   margin: 0%;
 }
 
+
 h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: $main-font-stack; 
   font-size: 4rem;
   text-align: center;
-  // color: cornflowerblue;
-  color: #ef8354;
+  color: $accent-color
 }
 
+
 button {
-  display: block;
-  // justify-content: center;
-  // align-items: center;
-  // position: relative;
-  // left: 50%;
-  // top: 50%;
-  // display: inline-flex;
-  // justify-content: center;
+  display: inlineblock;
+  font-family: $main-font-stack;
+  color: $secondary-color;
+  // background-color: black;
 }
+
 
 #app {
   display: flex;
   flex-wrap: wrap;
-  // align-items: center;
-  // justify-content: center;
-  // justify-content: space-around;
-  // justify-items: center;
-  // justify-self: center;
 }
-
-
 
 
 #eat {
 width: 50%;
 min-height: 50vh;
 background-color: #2D3142;
-filter: grayscale(10%);
+filter: $opacity-filter
 }
+
 
 #play {
   width: 50%;
   min-height: 50vh;
-  background-color: #4f5d75;
-  filter: grayscale(10%);
+  // background-color: #4f5d75;
+  background-color:#757474;
+  filter: $opacity-filter
 }
+
 
 #fight {
   width: 50%;
   min-height: 50vh;
-  background-color:#757474;
-  filter: grayscale(10%);
+  background-color: #dddddd;
+  filter: $opacity-filter
 }
+
 
 #sleep {
   width: 50%;
   min-height: 50vh;
-  background-color: #dddddd;
-  filter: grayscale(10%);
+  background-color: #4f5d75;
+  filter: $opacity-filter
 }
