@@ -24,8 +24,8 @@ const printFightSection = () => {
     printFightSection();
   };
 
-  $('#fight-button').click(fightButtonEvent);
-  $('#run-away-button').click(runAwayButtonEvent);
+  $('#fight-button').on('click', fightButtonEvent);
+  $('#run-away-button').on('click', runAwayButtonEvent);
 };
 
 export default printFightSection;

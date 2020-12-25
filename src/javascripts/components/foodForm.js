@@ -25,8 +25,8 @@ const printEatSection = () => {
     printEatSection();
   };
 
-  $('#healthy-food-button').click(eatHealthyFoodButtonEvent);
-  $('#unhealthy-food-button').click(eatUnhealthyFoodButtonEvent);
+  $('#healthy-food-button').on('click', eatHealthyFoodButtonEvent);
+  $('#unhealthy-food-button').on('click', eatUnhealthyFoodButtonEvent);
 };
 
 

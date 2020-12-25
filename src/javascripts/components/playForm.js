@@ -27,8 +27,8 @@ const printPlaySection = () => {
   };
 
 
-  $('#super-fun-button').click(superFunButtonEvent);
-  $('#just-fun-button').click(justFunButtonEvent);
+  $('#super-fun-button').on('click', superFunButtonEvent);
+  $('#just-fun-button').on('click', justFunButtonEvent);
 };
 
 export default printPlaySection;

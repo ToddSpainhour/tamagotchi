@@ -25,8 +25,8 @@ const printSleepSection = () => {
     printSleepSection();
   };
 
-  $('#nap-button').click(napButtonEvent);
-  $('#deep-sleep-button').click(deepSleepButtonEvent);
+  $('#nap-button').on('click', napButtonEvent);
+  $('#deep-sleep-button').on('click', deepSleepButtonEvent);
 };
 
 
