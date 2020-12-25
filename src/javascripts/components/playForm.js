@@ -16,7 +16,7 @@ const printPlaySection = () => {
 
 
   const superFunButtonEvent = () => {
-    if (getTamagotchiStats.fun <= 50) { getTamagotchiStats.fun += 50; } else { getTamagotchiStats.fun = 100; }
+    if (getTamagotchiStats.fun <= 85) { getTamagotchiStats.fun += 15; } else { getTamagotchiStats.fun = 100; }
     printPlaySection();
   };
 

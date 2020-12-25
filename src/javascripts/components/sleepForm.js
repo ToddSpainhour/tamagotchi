@@ -15,7 +15,7 @@ const printSleepSection = () => {
 
 
   const napButtonEvent = () => {
-    if (getTamagotchiStats.energy < 51) { getTamagotchiStats.energy += 50; } else { getTamagotchiStats.energy = 100; }
+    if (getTamagotchiStats.energy < 91) { getTamagotchiStats.energy += 10; } else { getTamagotchiStats.energy = 100; }
     printSleepSection();
   };
 

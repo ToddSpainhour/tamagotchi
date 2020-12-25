@@ -4,7 +4,6 @@ import printFightSection from './components/fightForm';
 import printPlaySection from './components/playForm';
 import printSleepSection from './components/sleepForm';
 
-// console.error('hi');
 
 const init = () => {
   printPlaySection();
