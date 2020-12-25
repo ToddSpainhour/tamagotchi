@@ -7,8 +7,8 @@ const printFightSection = () => {
 
   domString += `<h2>Health Score: ${getTamagotchiStats.strength} </h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="fight-button">Fight</button>';
-  domString += '<button id="run-away-button">Run Away</button>';
+  domString += '<button id="fight-button"  class="btn btn-light">Fight</button>';
+  domString += '<button id="run-away-button"  class="btn btn-light">Run Away</button>';
   domString += '</div>';
 
   printToDom('fight', domString);

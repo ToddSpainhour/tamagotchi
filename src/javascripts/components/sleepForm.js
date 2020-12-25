@@ -6,8 +6,8 @@ const printSleepSection = () => {
 
   domString += `<h2>Energy Score: ${getTamagotchiStats.energy}</h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="nap-button">Take a Nap</button>';
-  domString += '<button id="deep-sleep-button">Deep Sleep</button>';
+  domString += '<button id="nap-button"  class="btn btn-light">Take a Nap</button>';
+  domString += '<button id="deep-sleep-button"  class="btn btn-light">Deep Sleep</button>';
   domString += '</div>';
 
 

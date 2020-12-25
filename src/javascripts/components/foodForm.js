@@ -7,8 +7,8 @@ const printEatSection = () => {
 
   domString += `<h2>Fullness Score: ${getTamagotchiStats.full} </h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="healthy-food-button">Eat Healthy Food</button>';
-  domString += '<button id="unhealthy-food-button">Eat Unhealthy Food</button>';
+  domString += '<button id="healthy-food-button" class="btn btn-light">Eat Healthy Food</button>';
+  domString += '<button id="unhealthy-food-button" class="btn btn-light">Eat Unhealthy Food</button>';
   domString += '</div>';
 
   printToDom('eat', domString);

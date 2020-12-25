@@ -7,8 +7,8 @@ const printPlaySection = () => {
 
   domString += `<h2>Fun Score: ${getTamagotchiStats.fun}</h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="super-fun-button">Super Fun</button>';
-  domString += '<button id="just-fun-button">Moderately Fun</button>';
+  domString += '<button id="super-fun-button" class="btn btn-light">Super Fun</button>';
+  domString += '<button id="just-fun-button" class="btn btn-light">Moderately Fun</button>';
   domString += '</div>';
 
 
