@@ -7,8 +7,8 @@ const printPlaySection = () => {
 
   domString += `<h2>Fun Score: ${getTamagotchiStats.fun}</h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="super-fun-button">Super Fun</button>';
-  domString += '<button id="just-fun-button">Moderately Fun</button>';
+  domString += '<button id="super-fun-button" class="btn btn-light">Super Fun</button>';
+  domString += '<button id="just-fun-button" class="btn btn-light">Moderately Fun</button>';
   domString += '</div>';
 
 
@@ -16,7 +16,7 @@ const printPlaySection = () => {
 
 
   const superFunButtonEvent = () => {
-    if (getTamagotchiStats.fun <= 50) { getTamagotchiStats.fun += 50; } else { getTamagotchiStats.fun = 100; }
+    if (getTamagotchiStats.fun <= 85) { getTamagotchiStats.fun += 15; } else { getTamagotchiStats.fun = 100; }
     printPlaySection();
   };
 
@@ -27,8 +27,8 @@ const printPlaySection = () => {
   };
 
 
-  $('#super-fun-button').click(superFunButtonEvent);
-  $('#just-fun-button').click(justFunButtonEvent);
+  $('#super-fun-button').on('click', superFunButtonEvent);
+  $('#just-fun-button').on('click', justFunButtonEvent);
 };
 
 export default printPlaySection;

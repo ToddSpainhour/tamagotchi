@@ -6,8 +6,8 @@ const printSleepSection = () => {
 
   domString += `<h2>Energy Score: ${getTamagotchiStats.energy}</h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="nap-button">Take a Nap</button>';
-  domString += '<button id="deep-sleep-button">Deep Sleep</button>';
+  domString += '<button id="nap-button"  class="btn btn-light">Take a Nap</button>';
+  domString += '<button id="deep-sleep-button"  class="btn btn-light">Deep Sleep</button>';
   domString += '</div>';
 
 
@@ -15,7 +15,7 @@ const printSleepSection = () => {
 
 
   const napButtonEvent = () => {
-    if (getTamagotchiStats.energy < 51) { getTamagotchiStats.energy += 50; } else { getTamagotchiStats.energy = 100; }
+    if (getTamagotchiStats.energy < 91) { getTamagotchiStats.energy += 10; } else { getTamagotchiStats.energy = 100; }
     printSleepSection();
   };
 
@@ -25,8 +25,8 @@ const printSleepSection = () => {
     printSleepSection();
   };
 
-  $('#nap-button').click(napButtonEvent);
-  $('#deep-sleep-button').click(deepSleepButtonEvent);
+  $('#nap-button').on('click', napButtonEvent);
+  $('#deep-sleep-button').on('click', deepSleepButtonEvent);
 };
 
 

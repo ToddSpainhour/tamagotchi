@@ -7,11 +7,9 @@ const printEatSection = () => {
 
   domString += `<h2>Fullness Score: ${getTamagotchiStats.full} </h2>`;
   domString += '<div class="button-block">';
-  domString += '<button id="healthy-food-button">Eat Healthy Food</button>';
-  domString += '<button id="unhealthy-food-button">Eat Unhealthy Food</button>';
+  domString += '<button id="healthy-food-button" class="btn btn-light">Eat Healthy Food</button>';
+  domString += '<button id="unhealthy-food-button" class="btn btn-light">Eat Unhealthy Food</button>';
   domString += '</div>';
-
-  // use single quotes unless it contains a templete literal. Then use the usual ` before and after.
 
   printToDom('eat', domString);
 
@@ -27,8 +25,8 @@ const printEatSection = () => {
     printEatSection();
   };
 
-  $('#healthy-food-button').click(eatHealthyFoodButtonEvent);
-  $('#unhealthy-food-button').click(eatUnhealthyFoodButtonEvent);
+  $('#healthy-food-button').on('click', eatHealthyFoodButtonEvent);
+  $('#unhealthy-food-button').on('click', eatUnhealthyFoodButtonEvent);
 };
 
 
