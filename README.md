@@ -2,7 +2,7 @@
 See the site.    
 https://tamagotchi-18c35.web.app/
 
-## Description: 
+## Description 
 In this project, I created a small game where the user can interact with multiple stats, like health or energy levels. The goal was to utilize webpack and become familiar with component javascript. 
 
 ## Screenshots
