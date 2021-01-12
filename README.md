@@ -7,7 +7,7 @@ In this project, I created a small game where the user can interact with multipl
 
 ## Screenshots
 
-![Project Screenshot](src/screenshots/tamagotchi_v1.jpg)
+![Project Screenshot](https://raw.githubusercontent.com/ToddSpainhour/tamagotchi/master/src/screenshots/tamagotchi_v1.jpg)
 
 ## How To Run
 1. Clone down this repo.
