@@ -1,7 +1,6 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
 
-
 const printFightSection = () => {
   let domString = '';
 
@@ -17,7 +16,6 @@ const printFightSection = () => {
     if (getTamagotchiStats.strength >= 10) { getTamagotchiStats.strength -= 10; } else { getTamagotchiStats.strength = 0; }
     printFightSection();
   };
-
 
   const runAwayButtonEvent = () => {
     if (getTamagotchiStats.strength >= 0 && getTamagotchiStats.strength < 100) { getTamagotchiStats.strength += 1; }

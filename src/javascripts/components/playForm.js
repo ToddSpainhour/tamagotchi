@@ -1,7 +1,6 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
 
-
 const printPlaySection = () => {
   let domString = '';
 
@@ -11,21 +10,17 @@ const printPlaySection = () => {
   domString += '<button id="just-fun-button" class="btn btn-light">Moderately Fun</button>';
   domString += '</div>';
 
-
   printToDom('play', domString);
-
 
   const superFunButtonEvent = () => {
     if (getTamagotchiStats.fun <= 85) { getTamagotchiStats.fun += 15; } else { getTamagotchiStats.fun = 100; }
     printPlaySection();
   };
 
-
   const justFunButtonEvent = () => {
     if (getTamagotchiStats.fun <= 99) { getTamagotchiStats.fun += 2; }
     printPlaySection();
   };
-
 
   $('#super-fun-button').on('click', superFunButtonEvent);
   $('#just-fun-button').on('click', justFunButtonEvent);

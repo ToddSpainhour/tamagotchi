@@ -1,7 +1,6 @@
 import printToDom from '../helpers/util';
 import getTamagotchiStats from '../helpers/data/tamagotchi';
 
-
 const printEatSection = () => {
   let domString = '';
 
@@ -13,12 +12,10 @@ const printEatSection = () => {
 
   printToDom('eat', domString);
 
-
   const eatHealthyFoodButtonEvent = () => {
     if (getTamagotchiStats.full <= 90) { getTamagotchiStats.full += 10; } else { getTamagotchiStats.full = 100; }
     printEatSection();
   };
-
 
   const eatUnhealthyFoodButtonEvent = () => {
     if (getTamagotchiStats.full >= 3) { getTamagotchiStats.full -= 3; } else { getTamagotchiStats.full = 0; }
@@ -28,6 +25,5 @@ const printEatSection = () => {
   $('#healthy-food-button').on('click', eatHealthyFoodButtonEvent);
   $('#unhealthy-food-button').on('click', eatUnhealthyFoodButtonEvent);
 };
-
 
 export default printEatSection;
