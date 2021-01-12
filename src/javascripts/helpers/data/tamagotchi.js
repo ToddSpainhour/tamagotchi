@@ -1,4 +1,3 @@
-
 const tamagotchi = {
   full: 100,
   strength: 100,
